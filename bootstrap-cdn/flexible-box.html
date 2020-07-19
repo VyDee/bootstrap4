@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Flexible box</title>
+    <style>
+        div {
+            border: 1px solid green;
+        }
+        section {
+            background: #f1f1f1;
+            height: 200px;
+        }
+    </style>
+  </head>
+  <body>
+    <aside class="container">
+        <section class="d-flex flex-row">
+            <div class="p-4">One</div>
+            <div class="p-4">Two</div>
+            <div class="p-4">Three</div>
+        </section>
+        <hr>
+        <section class="d-flex flex-row-reverse">
+            <div class="p-4">One</div>
+            <div class="p-4">Two</div>
+            <div class="p-4">Three</div>
+        </section>
+        <hr>
+        <!--There are different options for justify-content: start, end, center, around, between-->
+        <section class="d-flex flex-row justify-content-around">
+            <div class="p-4">One</div>
+            <div class="p-4">Two</div>
+            <div class="p-4">Three</div>
+        </section>
+        <hr>
+        <!--Values for align-items: start, center, end, baseline, stretch(default)-->
+        <section class="d-flex flex-row align-items-center">
+            <div class="p-4">One</div>
+            <div class="p-4">Two</div>
+            <div class="p-4">Three</div>
+        </section>
+        <hr>
+        <!--the align will change when the screen goes to medium size-->
+        <section class="d-flex flex-row">
+            <div class="p-4 align-items-md-start">One</div>
+            <div class="p-4 align-items-md-center">Two</div>
+            <div class="p-4 align-items-md-end">Three</div>
+            <div class="p-4 align-items-md-baseline h3">Four</div>
+            <div class="p-4 align-items-md-stretch">Five</div>
+        </section>
+        <hr>
+        <section class="d-flex flex-column-reverse justify-content-around">
+            <div class="p-4">One</div>
+            <div class="p-4">Two</div>
+            <div class="p-4">Three</div>
+        </section>
+        <hr>
+
+    </aside>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
