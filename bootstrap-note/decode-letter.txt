@@ -1,0 +1,7 @@
+t : top
+b : bottom
+l : left
+r : right
+x : left and right
+y : top and bottom
+blank: all away around
