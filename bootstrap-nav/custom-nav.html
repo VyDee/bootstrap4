@@ -49,6 +49,11 @@
                       <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#link3">Link3</a></li>
                       <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#link4">Link4</a></li>
                       <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#link5">Link5</a></li>
+                      <form class="form-inline my-2 my-lg-0">
+                          <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                            <!--my: margin vertical-->
+                          <button class="btn btn-outline-success my-2 my-sm-0">Search</button>
+                      </form>
                   </ul>
               </div>
           </div>
@@ -59,6 +64,17 @@
             </div>
         </div>
     </header>
+
+    <div class="container m-5">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Alice in Wonderland</a></li>
+                <li class="breadcrumb-item"><a href="#">All Chapters</a></li>
+                <li class="breadcrumb-item active aria-current">Chapter 7: A Mad Tea-Party</li>
+            </ol>
+        </nav>
+    </div>
 
     <div class="container m-5">
         <ul class="nav nav-pills nav-fill">
@@ -77,6 +93,36 @@
             <li class="nav-item"><a href="#" class="nav-link">Dinah</a></li>
             
         </ul>
+    </div>
+    
+    <!--m : means margin-->
+    <div class="container m-5">
+        <h4>Chapters</h4>
+        <div>
+            <nav aria-label="Chapter Links">
+                <!--Different type of pagination such as pagination-lg, pagination-sm-->
+                <ul class="pagination pagination-lg justify-content-center">
+                    <!--adding "disabled" to show that the arrow is not a link-->
+                    <li class="page-item disabled">
+                        <a href="#" class="page-link" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                    </li>
+
+                    <li class="page-item active"><a href="#" class="page-link">1</a></li>
+                    <li class="page-item"><a href="#" class="page-link">2</a></li>
+                    <li class="page-item"><a href="#" class="page-link">3</a></li>
+                    <li class="page-item">
+                        <a href="#" class="page-link" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
     </div>
 
     <!-- Optional JavaScript -->
