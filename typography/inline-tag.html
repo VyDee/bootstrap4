@@ -32,16 +32,87 @@
 
     <div class="container mt-4">
       <h1 class="display-4">List of Characters</h1>
-      <ul>
-          <li><mark>Alice</mark></li>
-          <li><del>Queen of Hearts</del></li>
-          <li><s>Cheshire Cat</s></li>
-          <li><ins>Twede Dee</ins></li>
-          <li><u> Dum </u></li>
-          <li><small>Mad Hatter</small>/li>
-          <li><strong> Rabbit </strong></li>
-          <li><em>March Hare</em></li>
+      <ul class="list-group">
+          <li class="list-group-item list-group-item-action"><mark>Alice</mark></li>
+          <li class="list-group-item list-group-item-action"><del>Queen of Hearts</del></li>
+          <li class="list-group-item list-group-item-action"><s>Cheshire Cat</s></li>
+          <li class="list-group-item list-group-item-action"><ins>Twede Dee</ins></li>
+          <li class="list-group-item list-group-item-action"><u> Dum </u></li>
+          <li class="list-group-item list-group-item-action"><small>Mad Hatter</small>/li>
+          <li class="list-group-item list-group-item-action"><strong> Rabbit </strong></li>
+          <li class="list-group-item list-group-item-action"><em>March Hare</em></li>
       </ul>
+      <ul class="list-group mt-5">
+        <li class="list-group-item"><mark>Alice</mark></li>
+        <li class="list-group-item list-group-item-primary"><del>Queen of Hearts</del></li>
+        <li class="list-group-item list-group-item-secondary"><s>Cheshire Cat</s></li>
+        <li class="list-group-item list-group-item-success"><ins>Twede Dee</ins></li>
+        <li class="list-group-item list-group-item-info"><u> Dum </u></li>
+        <li class="list-group-item list-group-item-warning"><small>Mad Hatter</small>/li>
+        <li class="list-group-item list-group-item-danger"><strong> Rabbit </strong></li>
+        <li class="list-group-item list-group-item-light"><em>March Hare</em></li>
+        <li class="list-group-item list-group-item-dark"><em>Catepillar</em></li>
+      </ul>
+      <!--list-group-flush: delete borders
+          d-flex: display flex-->
+      <ul class="list-group mt-5 list-group-flush">
+        <li class="list-group-item d-flex justify-content-between align-items-center">Alice <span class="badge badge-primary">40</span></li>
+        <li class="list-group-item">Queen of Hearts</li>
+        <li class="list-group-item">Cheshire Cat</li>
+        <li class="list-group-item">Twede Dee</li>
+        <li class="list-group-item">Dum</li>
+        <li class="list-group-item">Mad Hatter</li>
+        <li class="list-group-item">Rabbit</li>
+        <li class="list-group-item">March Hare</li>
+      </ul>
+      <hr class="mt-5">
+      <ul class="list-unstyled">
+        <li>Alice <span class="badge badge-primary">40</span></li>
+        <li>Queen of Hearts</li>
+        <li>Cheshire Cat</li>
+        <li>Twede Dee</li>
+        <li>Dum</li>
+        <li>Mad Hatter</li>
+        <li>Rabbit</li>
+        <li>March Hare</li>
+      </ul>
+      <hr class="mt-5">
+      <ul class="list-inline">
+        <li class="list-inline-item">Alice <span class="badge badge-primary">40</span></li>
+        <li class="list-inline-item">Queen of Hearts</li>
+        <li class="list-inline-item">Cheshire Cat</li>
+        <li class="list-inline-item">Twede Dee</li>
+        <li class="list-inline-item">Dum</li>
+        <li class="list-inline-item">Mad Hatter</li>
+        <li class="list-inline-item">Rabbit</li>
+        <li class="list-inline-item">March Hare</li>
+      </ul>
+      <hr class="mt-5">
+      <dl class="row">
+        <dt class="col-sm-3">Alice</dt>
+        <dd class="col-sm-9">The main character who travels to wonderland</dd>
+
+        <dt class="col-sm-3">Dinah</dt>
+        <dd class="col-sm-9">The main character who travels to wonderland</dd>
+
+        <dt class="col-sm-3">Mary Ann</dt>
+        <dd class="col-sm-9">The main character who travels to wonderland</dd>
+
+        <dt class="col-sm-3 text-truncate">Tea Party Goers and the old crab with cake</dt>
+        <dd class="col-sm-9">The main character who travels to wonderland</dd>
+
+        <dt class="col-sm-3">Tea Party Goers</dt>
+        <dd class="col-sm-9">
+          <dl class="row">
+            <dt class="col-sm-4">
+              The March Hare
+            </dt>
+            <dd class="col-sm-8">
+            The main character who travels to wonderland
+            </dd>
+          </dl>
+        </dd>
+      </dl>
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
